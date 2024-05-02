@@ -6,13 +6,13 @@ return {
 
 		-- set keymaps
 		local keymap = vim.keymap -- for conciseness
-		keymap.set("n", "<leader>cc", "<cmd>Competitest run<cr>", { desc = "Compile and run test cases" })
+		keymap.set("n", "<leader>cc", "<cmd>CompetiTest run<cr>", { desc = "Compile and run test cases" })
 		keymap.set(
 			"n",
 			"<leader>cr",
-			"<cmd>Competitest receive testcases<cr>",
+			"<cmd>CompetiTest receive testcases<cr>",
 			{ desc = "Get testcases from extension" }
 		)
-		keymap.set("n", "<leader>cs", "<cmd>Competitest show_ui<cr>", { desc = "Show previous testcases" })
+		keymap.set("n", "<leader>cs", "<cmd>CompetiTest show_ui<cr>", { desc = "Show previous testcases" })
 	end,
 }
